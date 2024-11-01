@@ -3,6 +3,7 @@ def print_params(a=1, b='строка', c=True):
 
 
 #1.Функция с параметрами по умолчанию:
+print_params()
 print_params(b = 25)
 print_params(c = [1,2,3])
 
