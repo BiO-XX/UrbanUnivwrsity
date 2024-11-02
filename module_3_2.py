@@ -1,9 +1,11 @@
 def send_email(massage, recipient, sender="university.help@gmail.com"):
     recipient.lower()
     sender.lower()
-    if recipient.count(".ru") == 0 and recipient.count(".com") == 0 and recipient.count(".net") == 0 or recipient.count("@") == 0:
+    a = len(recipient)
+    b = len(sender)
+    if recipient.count(".ru", (a-3), a) == 0 and recipient.count(".com", (a-4), a) == 0 and recipient.count(".net", (a-4), a) == 0 or recipient.count("@") == 0:
         print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
-    elif sender.count(".ru") == 0 and sender.count(".com") == 0 and sender.count(".net") == 0 or sender.count("@") == 0:
+    elif sender.count(".ru", (b-3), b) == 0 and sender.count(".com", (b-4), b) == 0 and sender.count(".net", (b-4), b) == 0 or sender.count("@") == 0:
         print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
     elif recipient == sender:
         print(f"Нельзя отправить письмо самому себе!")
