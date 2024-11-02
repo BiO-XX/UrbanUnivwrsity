@@ -6,7 +6,7 @@ def single_root_words(root_word, *other_words):
         if chek_root_word.count(check_word) > 0 or check_word.count(chek_root_word) > 0:
             same_words.append(word)
         else:
-            same_words.append(word)
+            continue
     return same_words
 
 
