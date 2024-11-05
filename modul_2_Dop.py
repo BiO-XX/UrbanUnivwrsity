@@ -40,5 +40,5 @@ for v in range(1, number):
                 result = result + str(v) + str(r)
             else:
                 continue
-
-print(result)
+                
+print(f"{t} - {result}")
