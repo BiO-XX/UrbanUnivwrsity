@@ -13,7 +13,6 @@ class House:
                     floor = floor + 1
                     print(floor)
                     continue
-
                 else:
                     break
 
